@@ -48,4 +48,4 @@ models:
 
     warehouse:
       +materialized: table
-      +schama: warehouse
+      +schema: warehouse
