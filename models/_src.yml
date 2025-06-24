@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: citibike
+    database: citibike  
+    schema: public 
+    tables:
+      - name: trips
+
+  - name: weather
+    database: weather
+    schema: public
+    tables:
+      - name: json_weather_data
