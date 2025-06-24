@@ -1,0 +1,21 @@
+version: 2
+
+models:
+    - name: lnd_citibike_trips
+      description: Landing Table for Citibike Trips
+      columns:
+        - name: trip_id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
+
+
+    - name: lnd_weather_data
+      description: Landing Table for Weather Data
+      columns:
+        - name: weather_id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
