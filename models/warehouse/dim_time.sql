@@ -1,1 +1,1 @@
-select * from stg_dim_time
+select * from {{ ref('stg_dim_time') }}
