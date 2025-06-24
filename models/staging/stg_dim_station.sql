@@ -14,7 +14,7 @@ end_station_name
 from
 {{ ref('lnd_citibike_trips') }})
 select 
-{{ dbt_utils.generate_surrogate_key(['station_id','station_name'])}} as dim_station_key,
+{{ dbt_utils.generate_surrogate_key(['station_id'])}} as dim_station_key,
 station_id,
 station_name,
 from
